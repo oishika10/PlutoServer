@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net7.0": []
+  },
+  "packageFolders": {
+    "/Users/oishikachaudhury/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/oishikachaudhury/Desktop/Pluto/Pluto.csproj",
+      "projectName": "Pluto",
+      "projectPath": "/Users/oishikachaudhury/Desktop/Pluto/Pluto.csproj",
+      "packagesPath": "/Users/oishikachaudhury/.nuget/packages/",
+      "outputPath": "/Users/oishikachaudhury/Desktop/Pluto/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/oishikachaudhury/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "runtimeIdentifierGraphPath": "/Users/oishikachaudhury/Library/Caches/VisualStudio/17.0/MSBuild/49253_2/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
