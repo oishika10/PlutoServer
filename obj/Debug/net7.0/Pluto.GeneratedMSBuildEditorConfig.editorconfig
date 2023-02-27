@@ -24,12 +24,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/oishikachaudhury/Desktop/Pluto/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/oishikachaudhury/Desktop/Pluto/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oishikachaudhury/Desktop/Pluto/Pages/Info.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5mby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oishikachaudhury/Desktop/Pluto/Pages/Spotify_login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvdGlmeV9sb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/oishikachaudhury/Desktop/Pluto/Pages/Tags.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFncy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/oishikachaudhury/Desktop/Pluto/Shared/SurveyPrompt.razor]

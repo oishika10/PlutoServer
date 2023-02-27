@@ -1,0 +1,39 @@
+﻿<h3>Enter tags!</h3>
+
+<ul>
+    @foreach (string tag in tags)
+    {
+        <li>
+         tag
+        <button @onclick="() => remove(tag)">x</button>
+        </li>
+    }
+</ul>
+<input placeholder="Enter tag" @bind=tag @onkeydown="@Enter" />
+<button @onlick="addTag">Enter!</button>
+<button @onlick="clear">Clear</button>
+
+@code {
+    private List<string> tags = new List<string>();
+    private string? tag;
+    private void addTag()
+    {
+        if (!string.IsNullOrWhiteSpace(tag) && tags.Count() < 5)
+        {
+            tags.Add(tag);
+            tag = string.Empty;
+        }
+    }
+    private void Enter()
+    {
+        addTag();
+    }
+    private void clear()
+    {
+        tags.Clear();
+    }
+    private void remove(string tag)
+    {
+        tags.Remove(tag);
+    }
+}

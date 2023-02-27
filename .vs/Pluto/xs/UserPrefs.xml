@@ -1,22 +1,23 @@
 ﻿<Properties StartupConfiguration="{020195CB-7600-41C3-A276-DA4A7CB06295}|Default">
-  <MonoDevelop.Ide.ItemProperties.Pluto PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.razor">
+  <MonoDevelop.Ide.ItemProperties.Pluto PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Test.razor">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="App.razor" Line="1" Column="1" />
+      <File FileName="Pages/Index.razor" Line="12" Column="18" />
+      <File FileName="Pages/Test.razor" Line="15" Column="3" />
+      <File FileName="Pages/Spotify_login.razor" Line="1" Column="23" />
+      <File FileName="Pages/Counter.razor" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pluto" expanded="True">
             <Node name="Pluto" expanded="True">
-              <Node name="App.razor" selected="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -26,4 +27,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
