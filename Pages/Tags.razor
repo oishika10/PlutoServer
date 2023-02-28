@@ -1,32 +1,42 @@
-﻿<h3>Enter tags!</h3>
-
-<ul>
-    @foreach (string tag in tags)
+﻿<ul>
+@foreach (var tag in tags)
     {
         <li>
-         tag
-        <button @onclick="() => remove(tag)">x</button>
+            @tag
+            <button class="btn btn-primary" @onclick="() => remove(tag)">remove</button>
         </li>
     }
 </ul>
-<input placeholder="Enter tag" @bind=tag @onkeydown="@Enter" />
-<button @onlick="addTag">Enter!</button>
-<button @onlick="clear">Clear</button>
+
+<PageTitle>Home</PageTitle>
+
+<h1>Tags</h1>
+
+<input placeholder="Enter tag" @bind=@tag @bind:event="onkeydown" @onkeydown="enter" />
+<button class="btn btn-primary" @onclick="addTag">Add</button>
+<button class="btn btn-primary" @onclick="clear">Clear</button>
 
 @code {
+    private string tag;
+
     private List<string> tags = new List<string>();
-    private string? tag;
+
     private void addTag()
     {
-        if (!string.IsNullOrWhiteSpace(tag) && tags.Count() < 5)
+        if (tags.Count() < 5 && tag != "")
         {
             tags.Add(tag);
             tag = string.Empty;
         }
     }
-    private void Enter()
+    private void enter(KeyboardEventArgs e)
     {
-        addTag();
+        System.Console.WriteLine(e.Code);
+        System.Console.WriteLine(tag);
+        if (e.Code == "Enter")
+        {
+            addTag();
+        }
     }
     private void clear()
     {
