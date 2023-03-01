@@ -5,8 +5,8 @@
 
 
 
-<input placeholder="username" @bind="username" />
-<input placeholder="password" type="password" @bind="password" />
+<input placeholder="username" @bind="username"/>
+<input placeholder="password" type="password" @bind="password" @onkeyup="onEnterPassword"/>
 
 <button @onclick="login" class="btn btn-primary">Login using spotify</button>
 
@@ -16,6 +16,16 @@
 
     private void login()
     {
-        //logs in
+        //logic for login, will require way more work
+    }
+
+    //If the user clicks enter, after passing in the password
+    //do the login logic
+    private void onEnterPassword( KeyboardEventArgs e )
+    {
+        if( e.Code == "Enter")
+        {
+            login();
+        }
     }
 }
