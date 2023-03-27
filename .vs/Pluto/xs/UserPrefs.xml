@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{020195CB-7600-41C3-A276-DA4A7CB06295}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Tags.razor">
     <Files>
-      <File FileName="Pages/Index.razor" Line="12" Column="1" />
-      <File FileName="Pages/Counter.razor" Line="3" Column="1" />
-      <File FileName="Pages/_Host.cshtml" Line="16" Column="25" />
-      <File FileName="Pages/Tags.razor" Line="16" Column="54" />
+      <File FileName="Pages/Index.razor" />
+      <File FileName="Pages/Tags.razor" Line="18" Column="1" />
+      <File FileName="Pages/Spotify_login.razor" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,18 +14,18 @@
           <Node name="Pluto" expanded="True">
             <Node name="Pluto" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Tags.razor" selected="True" />
+              </Node>
               <Node name="Shared" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Pluto PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

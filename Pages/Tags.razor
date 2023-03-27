@@ -1,9 +1,9 @@
 ﻿<ul>
-@foreach (var tag in tags)
+@foreach (var m_tag in m_tags)
     {
         <li>
-            @tag
-            <button class="btn btn-primary" @onclick="() => remove(tag)">remove</button>
+            @m_tag
+            <button class="btn btn-primary" @onclick="() => remove(m_tag)">remove</button>
         </li>
     }
 </ul>
@@ -12,27 +12,27 @@
 
 <h1>Tags</h1>
 
-<input placeholder="Enter tag" @bind=@tag @onkeyup="enter" />
+<input placeholder="Enter tag" @bind=@m_tag @onkeyup="enter" />
 <button class="btn btn-primary" @onclick="addTag">Add</button>
 <button class="btn btn-primary" @onclick="clear">Clear</button>
 
 @code {
-    private string tag;
+    private string m_tag;
 
-    private List<string> tags = new List<string>();
+    private List<string> m_tags = new List<string>();
 
     private void addTag()
     {
-        if (tags.Count() < 5 && tag != "")
+        if (m_tags.Count() < 5 && m_tag != "")
         {
-            tags.Add(tag);
-            tag = string.Empty;
+            m_tags.Add(m_tag);
         }
+        m_tag = string.Empty;
     }
     private void enter(KeyboardEventArgs e)
     {
         System.Console.WriteLine(e.Code);
-        System.Console.WriteLine(tag);
+        System.Console.WriteLine(m_tag);
         if (e.Code == "Enter")
         {
             addTag();
@@ -40,10 +40,10 @@
     }
     private void clear()
     {
-        tags.Clear();
+        m_tags.Clear();
     }
     private void remove(string tag)
     {
-        tags.Remove(tag);
+        m_tags.Remove(tag);
     }
 }
