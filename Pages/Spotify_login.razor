@@ -26,10 +26,6 @@
         Console.WriteLine(requestEndpoint.ToString());
         Console.WriteLine(response);
         httpContextAccessor.HttpContext.Response.Redirect(requestEndpoint.ToString(), false);
-        //System.Web.Redirect(requestEndpoint.ToString());
-        //Console.WriteLine(result);
-        //spotifyClient.BaseAddress = new Uri("https://accounts.spotify.com/authorize");
-        //HttpResponseMessage response = await spotifyClient.GetAsync();
     }
 
     private void login()
