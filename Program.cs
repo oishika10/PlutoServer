@@ -19,10 +19,14 @@ if (!app.Environment.IsDevelopment())
 
 
 app.UseStaticFiles();
-
 app.UseRouting();
+app.UseAuthorization();
+app.UseEndpoints( endpoints => 
+    {
+        endpoints.MapBlazorHub();
+        endpoints.MapRazorPages();
+        endpoints.MapFallbackToPage("/_Host");
+    });
 
-app.MapBlazorHub();
-app.MapFallbackToPage("/_Host");
-
+//app.MapFallbackToPage("/_Host");
 app.Run();
