@@ -8,6 +8,17 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:44351", "http://localhost:4200")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+        });
+});
+
 
 var app = builder.Build();
 
@@ -27,6 +38,12 @@ app.UseEndpoints( endpoints =>
         endpoints.MapRazorPages();
         endpoints.MapFallbackToPage("/_Host");
     });
-
+app.UseCors(builder =>
+{
+    builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader();
+});
 //app.MapFallbackToPage("/_Host");
 app.Run();
